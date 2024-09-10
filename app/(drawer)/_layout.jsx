@@ -4,7 +4,7 @@ import { Drawer } from "expo-router/drawer";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
 import CustomDrawer from "../../components/CustomDrawer";
-import { AntDesign, Entypo } from "@expo/vector-icons";
+import { AntDesign, Entypo, MaterialCommunityIcons } from "@expo/vector-icons";
 const DrawerLayout = () => {
   const navigation = useNavigation();
   return (
@@ -48,6 +48,11 @@ const DrawerLayout = () => {
           name="(tabs)"
           options={{
             drawerLabel: "Home",
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
               <TouchableOpacity>
@@ -57,12 +62,24 @@ const DrawerLayout = () => {
           }}
         />
         <Drawer.Screen
-          name="Home"
+          name="Profile"
           onPress={() => navigation.navigate("/Profile")}
           options={{
-            drawerLabel: "Explore",
+            drawerLabel: "Profile",
             headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
             drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <MaterialCommunityIcons
+                name="account-star"
+                size={24}
+                color={color}
+              />
+            ),
           }}
         />
       </Drawer>
