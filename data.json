@@ -1,0 +1,284 @@
+{
+  "tweets": [
+    {
+      "id": "1",
+      "user": {
+        "id": "user1",
+        "name": "John Doe",
+        "username": "john_doe",
+        "profile_image_url": "https://example.com/profile1.jpg",
+        "banner_image_url": "https://example.com/banner1.jpg",
+        "bio": "Coffee enthusiast and tech lover. Exploring the world one cup at a time.",
+        "joined_date": "2022-05-14",
+        "location": "San Francisco, CA",
+        "followers_count": 350,
+        "following_count": 180
+      },
+      "content": "Just had an amazing coffee at the new cafe in town! #CoffeeLover",
+      "timestamp": "2024-09-07T10:15:00Z",
+      "likes": 120,
+      "retweets": 30,
+      "replies": 15,
+      "mentions": ["user2"],
+      "hashtags": ["CoffeeLover"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": "user2",
+        "name": "Jane Smith",
+        "username": "jane_smith",
+        "profile_image_url": "https://example.com/profile2.jpg",
+        "banner_image_url": "https://example.com/banner2.jpg",
+        "bio": "Movie buff and aspiring filmmaker. Sharing my journey in the world of cinema.",
+        "joined_date": "2021-08-22",
+        "location": "Los Angeles, CA",
+        "followers_count": 500,
+        "following_count": 220
+      },
+      "content": "Excited for the new movie release this weekend! 🎬 #MovieNight",
+      "timestamp": "2024-09-07T11:00:00Z",
+      "likes": 95,
+      "retweets": 40,
+      "replies": 10,
+      "mentions": [],
+      "hashtags": ["MovieNight"],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://example.com/video1.mp4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": "user3",
+        "name": "Alice Johnson",
+        "username": "alice_johnson",
+        "profile_image_url": "https://example.com/profile3.jpg",
+        "banner_image_url": "https://example.com/banner3.jpg",
+        "bio": "Travel enthusiast and food lover. Capturing moments from around the globe.",
+        "joined_date": "2023-01-30",
+        "location": "New York, NY",
+        "followers_count": 420,
+        "following_count": 200
+      },
+      "content": "Looking forward to the weekend getaway! 🌄 #Travel",
+      "timestamp": "2024-09-07T12:30:00Z",
+      "likes": 150,
+      "retweets": 60,
+      "replies": 25,
+      "mentions": ["user1"],
+      "hashtags": ["Travel"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "user": {
+        "id": "user4",
+        "name": "Michael Lee",
+        "username": "michael_lee",
+        "profile_image_url": "https://example.com/profile4.jpg",
+        "banner_image_url": "https://example.com/banner4.jpg",
+        "bio": "Tech enthusiast and startup founder. Passionate about innovation.",
+        "joined_date": "2020-12-05",
+        "location": "Seattle, WA",
+        "followers_count": 600,
+        "following_count": 250
+      },
+      "content": "Just launched a new app! Check it out! 🚀 #Tech",
+      "timestamp": "2024-09-07T14:00:00Z",
+      "likes": 200,
+      "retweets": 75,
+      "replies": 40,
+      "mentions": ["user5"],
+      "hashtags": ["Tech"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "user": {
+        "id": "user5",
+        "name": "Emily Davis",
+        "username": "emily_davis",
+        "profile_image_url": "https://example.com/profile5.jpg",
+        "banner_image_url": "https://example.com/banner5.jpg",
+        "bio": "Fitness trainer and health coach. Helping you achieve your goals.",
+        "joined_date": "2019-03-20",
+        "location": "Austin, TX",
+        "followers_count": 800,
+        "following_count": 300
+      },
+      "content": "New workout routine available on my website! 💪 #Fitness",
+      "timestamp": "2024-09-07T15:30:00Z",
+      "likes": 180,
+      "retweets": 50,
+      "replies": 20,
+      "mentions": ["user4"],
+      "hashtags": ["Fitness"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "user": {
+        "id": "user6",
+        "name": "Sophia Green",
+        "username": "sophia_green",
+        "profile_image_url": "https://example.com/profile6.jpg",
+        "banner_image_url": "https://example.com/banner6.jpg",
+        "bio": "Food critic and culinary expert. Exploring the best dining spots.",
+        "joined_date": "2022-07-18",
+        "location": "Chicago, IL",
+        "followers_count": 400,
+        "following_count": 150
+      },
+      "content": "Just reviewed the new Italian restaurant in town! 🍝 #Foodie",
+      "timestamp": "2024-09-07T16:45:00Z",
+      "likes": 130,
+      "retweets": 55,
+      "replies": 18,
+      "mentions": [],
+      "hashtags": ["Foodie"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "user": {
+        "id": "user7",
+        "name": "Daniel Kim",
+        "username": "daniel_kim",
+        "profile_image_url": "https://example.com/profile7.jpg",
+        "banner_image_url": "https://example.com/banner7.jpg",
+        "bio": "Entrepreneur and motivational speaker. Inspiring others to achieve greatness.",
+        "joined_date": "2021-09-10",
+        "location": "Denver, CO",
+        "followers_count": 750,
+        "following_count": 275
+      },
+      "content": "Sharing some tips on productivity in my latest blog post. 📈 #Motivation",
+      "timestamp": "2024-09-07T17:30:00Z",
+      "likes": 210,
+      "retweets": 80,
+      "replies": 30,
+      "mentions": ["user8"],
+      "hashtags": ["Motivation"],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://example.com/video2.mp4"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "user": {
+        "id": "user8",
+        "name": "Olivia Brown",
+        "username": "olivia_brown",
+        "profile_image_url": "https://example.com/profile8.jpg",
+        "banner_image_url": "https://example.com/banner8.jpg",
+        "bio": "Fashion designer and style blogger. Creating trends and sharing inspirations.",
+        "joined_date": "2018-11-23",
+        "location": "Miami, FL",
+        "followers_count": 950,
+        "following_count": 400
+      },
+      "content": "New fashion line dropping next week! Stay tuned for updates. 👗 #Fashion",
+      "timestamp": "2024-09-07T18:00:00Z",
+      "likes": 300,
+      "retweets": 100,
+      "replies": 50,
+      "mentions": ["user7"],
+      "hashtags": ["Fashion"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "user": {
+        "id": "user9",
+        "name": "James Wilson",
+        "username": "james_wilson",
+        "profile_image_url": "https://example.com/profile9.jpg",
+        "banner_image_url": "https://example.com/banner9.jpg",
+        "bio": "Professional photographer capturing moments of life.",
+        "joined_date": "2020-04-10",
+        "location": "Philadelphia, PA",
+        "followers_count": 550,
+        "following_count": 230
+      },
+      "content": "Just posted a new photo series from my latest shoot. Check it out! 📸 #Photography",
+      "timestamp": "2024-09-07T19:30:00Z",
+      "likes": 170,
+      "retweets": 65,
+      "replies": 22,
+      "mentions": [],
+      "hashtags": ["Photography"],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://example.com/image7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "user": {
+        "id": "user10",
+        "name": "Mia Taylor",
+        "username": "mia_taylor",
+        "profile_image_url": "https://example.com/profile10.jpg",
+        "banner_image_url": "https://example.com/banner10.jpg",
+        "bio": "Science communicator and educator. Sharing knowledge and insights on STEM.",
+        "joined_date": "2019-06-15",
+        "location": "Boston, MA",
+        "followers_count": 400,
+        "following_count": 180
+      },
+      "content": "Excited to announce my new science education series on YouTube! 🔬 #STEM",
+      "timestamp": "2024-09-07T20:00:00Z",
+      "likes": 140,
+      "retweets": 50,
+      "replies": 28,
+      "mentions": ["user11"],
+      "hashtags": ["STEM"],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://example.com/video3.mp4"
+        }
+      ]
+    }
+  ]
+}
