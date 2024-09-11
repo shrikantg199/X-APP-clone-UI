@@ -4,7 +4,15 @@ import { Drawer } from "expo-router/drawer";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
 import CustomDrawer from "../../components/CustomDrawer";
-import { AntDesign, Entypo, MaterialCommunityIcons } from "@expo/vector-icons";
+import {
+  AntDesign,
+  Entypo,
+  FontAwesome,
+  FontAwesome5,
+  FontAwesome6,
+  MaterialCommunityIcons,
+  Octicons,
+} from "@expo/vector-icons";
 const DrawerLayout = () => {
   const navigation = useNavigation();
   return (
@@ -39,7 +47,7 @@ const DrawerLayout = () => {
               }}
             >
               <Text style={{ fontWeight: "bold" }}>Upgrade</Text>
-              <Entypo name="dots-three-vertical" size={18} color="black" />
+              <Entypo name="dots-three-vertical" size={18}  />
             </View>
           ),
         }}
@@ -79,6 +87,91 @@ const DrawerLayout = () => {
                 size={24}
                 color={color}
               />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Premium"
+          onPress={() => navigation.navigate("/Profile")}
+          options={{
+            drawerLabel: "Premium",
+            headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
+            drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <FontAwesome6 name="x-twitter" size={24} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Bookmarks"
+          onPress={() => navigation.navigate("/Profile")}
+          options={{
+            drawerLabel: "Bookmarks",
+            headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
+            drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <FontAwesome name="bookmark" size={24} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Lists"
+          onPress={() => navigation.navigate("/Profile")}
+          options={{
+            drawerLabel: "Lists",
+            headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
+            drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <Octicons name="checklist" size={24} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Space"
+          onPress={() => navigation.navigate("/Profile")}
+          options={{
+            drawerLabel: "Spaces",
+            headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
+            drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <FontAwesome5 name="microphone-alt" size={24} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Monetisation"
+          onPress={() => navigation.navigate("/Profile")}
+          options={{
+            drawerLabel: "Monetisation",
+            headerShown: false,
+            drawerLabelStyle: {
+              marginHorizontal: -20,
+              alignItems: "center",
+              fontSize: 18,
+            },
+            drawerItemStyle: { backgroundColor: "transparent" },
+            drawerIcon: ({ color }) => (
+              <FontAwesome6 name="money-bill-wave" size={24} color={color} />
             ),
           }}
         />

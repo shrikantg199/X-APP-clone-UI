@@ -29,16 +29,15 @@ const CustomDrawer = (props) => {
         <View
           style={{
             paddingTop: 1,
-            marginTop: 10,
             paddingHorizontal: 20,
             flex: 1,
             backgroundColor: "#fff",
-            borderTopColor: "gray",
             borderBottomColor: "gray",
             borderTopWidth: 0.6,
             borderBottomWidth: 0.6,
             borderLeftWidth: 0,
             borderRightWidth: 0,
+            borderTopWidth: 0,
           }}
         >
           <DrawerItemList {...props} />

@@ -2,8 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import React, { memo } from "react";
 const Tab = createMaterialTopTabNavigator();
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import News from "./../../../components/Explore/News";
-import Trending from "./../../../components/Explore/Trending";
+import News from "../../../components/Explore/News";
+import Trending from "../../../components/Explore/Trending";
 import ForYou from "../../../components/Explore/ForYou";
 const Explore = memo(() => {
   return (
