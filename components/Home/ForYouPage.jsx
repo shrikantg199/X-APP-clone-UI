@@ -33,29 +33,29 @@ const ForYouPage = () => {
               className="h-10 w-10 rounded-full mr-2"
             />
             {/* User Info and Post */}
-            <View className="flex-1 items-center">
+            <View className="flex-1 ">
               <View className="justify-between flex-row w-full flex items-center">
                 <View className="flex-row items-center gap-2">
-                  <Text className="text-black text-[16px] font-bold">
+                  <Text className="text-black text-[16px] font-bold ">
                     {item.user.name}
                   </Text>
-                  <Text className="text-gray-500 ">{item.user.username}</Text>
+                  <Text className="text-gray-500 ">@{item.user.username}</Text>
                   <Text className="text-gray-400">
-                    {formatTimeAgo(item.timestamp)}
+                    - {formatTimeAgo(item.timestamp)}
                   </Text>
                 </View>
                 <Feather name="more-vertical" size={20} color="gray" />
               </View>
 
               {/* Post Content */}
-              <Text className="text-gray-800 mt-2 flex-wrap">
+              <Text className="text-gray-800 mt-2 flex-wrap leading-6">
                 {item.content}
               </Text>
-              {item.media?.length > 0 ? (
+
+              {item.media[0].type === "image" ? (
                 <Image
                   source={{ uri: item.media[0].url }}
-                  className="h-64 w-full rounded-3xl  mt-2"
-                  resizeMode="cover"
+                  className="h-[350px] w-full rounded-3xl object-cover  mt-2"
                 />
               ) : null}
               {/* reactions */}

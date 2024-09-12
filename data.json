@@ -5,7 +5,7 @@
       "user": {
         "id": "user1",
         "name": "EXPO",
-        "username": "john_doe",
+        "username": "expo",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1676741952014897152/j5t0mY_I_400x400.jpg",
         "banner_image_url": "https://example.com/banner1.jpg",
         "bio": "Coffee enthusiast and tech lover. Exploring the world one cup at a time.",
@@ -20,7 +20,7 @@
       "retweets": 30,
       "replies": 15,
       "mentions": ["user2"],
-      "hashtags": ["CoffeeLover"],
+      "hashtags": ["ReactNative"],
       "media": [
         {
           "type": "image",
@@ -34,7 +34,7 @@
         "id": "user2",
         "name": "Jane Smith",
         "username": "jane_smith",
-        "profile_image_url": "https://example.com/profile2.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1833396791402000384/vdX94BMX_400x400.jpg",
         "banner_image_url": "https://example.com/banner2.jpg",
         "bio": "Movie buff and aspiring filmmaker. Sharing my journey in the world of cinema.",
         "joined_date": "2021-08-22",
@@ -51,8 +51,8 @@
       "hashtags": ["MovieNight"],
       "media": [
         {
-          "type": "video",
-          "url": "https://example.com/video1.mp4"
+          "type": "image",
+          "url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/08/Tony-Stark-Back-In-The-Past-Iron-Man-1.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5"
         }
       ]
     },
@@ -62,7 +62,7 @@
         "id": "user3",
         "name": "Alice Johnson",
         "username": "alice_johnson",
-        "profile_image_url": "https://example.com/profile3.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/965724950056218624/BSWiM_0a_400x400.jpg",
         "banner_image_url": "https://example.com/banner3.jpg",
         "bio": "Travel enthusiast and food lover. Capturing moments from around the globe.",
         "joined_date": "2023-01-30",
@@ -80,7 +80,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://example.com/image2.jpg"
+          "url": "https://images.hindustantimes.com/img/2023/01/10/550x309/While-the-past-year-was-about-revenge-and-revival-_1673351689949.jpg"
         }
       ]
     },
@@ -90,7 +90,7 @@
         "id": "user4",
         "name": "Michael Lee",
         "username": "michael_lee",
-        "profile_image_url": "https://example.com/profile4.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1361943353193943040/QNaebEsk_400x400.png",
         "banner_image_url": "https://example.com/banner4.jpg",
         "bio": "Tech enthusiast and startup founder. Passionate about innovation.",
         "joined_date": "2020-12-05",
@@ -108,7 +108,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://example.com/image3.jpg"
+          "url": "https://cdn.sanity.io/images/siias52v/production/235ce43e9c746a80b2df06cebbdbc1ab94e95857-2400x1350.png?auto=format&fit=max&q=75&w=1800"
         }
       ]
     },
@@ -118,7 +118,7 @@
         "id": "user5",
         "name": "Emily Davis",
         "username": "emily_davis",
-        "profile_image_url": "https://example.com/profile5.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1776530035194945536/7qkAWFEf_400x400.jpg",
         "banner_image_url": "https://example.com/banner5.jpg",
         "bio": "Fitness trainer and health coach. Helping you achieve your goals.",
         "joined_date": "2019-03-20",
@@ -136,7 +136,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://example.com/image4.jpg"
+          "url": "https://pbs.twimg.com/media/GXSfrLgWoAECNow?format=jpg&name=900x900"
         }
       ]
     },
@@ -146,7 +146,7 @@
         "id": "user6",
         "name": "Sophia Green",
         "username": "sophia_green",
-        "profile_image_url": "https://example.com/profile6.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1833913250284453888/CKFzn2Ti_400x400.jpg",
         "banner_image_url": "https://example.com/banner6.jpg",
         "bio": "Food critic and culinary expert. Exploring the best dining spots.",
         "joined_date": "2022-07-18",
@@ -164,7 +164,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://example.com/image5.jpg"
+          "url": "https://pbs.twimg.com/media/GXSbdrfXsAAvuIJ?format=jpg&name=medium"
         }
       ]
     },
@@ -174,7 +174,7 @@
         "id": "user7",
         "name": "Daniel Kim",
         "username": "daniel_kim",
-        "profile_image_url": "https://example.com/profile7.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1773315420378058752/Ix3N3l0-_400x400.jpg",
         "banner_image_url": "https://example.com/banner7.jpg",
         "bio": "Entrepreneur and motivational speaker. Inspiring others to achieve greatness.",
         "joined_date": "2021-09-10",
@@ -191,8 +191,8 @@
       "hashtags": ["Motivation"],
       "media": [
         {
-          "type": "video",
-          "url": "https://example.com/video2.mp4"
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/GXQsHUHXYAECYsH?format=jpg&name=large"
         }
       ]
     },
@@ -202,7 +202,7 @@
         "id": "user8",
         "name": "Laura Perez",
         "username": "laura_perez",
-        "profile_image_url": "https://example.com/profile8.jpg",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1697763257723895808/c17dXzGV_400x400.jpg",
         "banner_image_url": "https://example.com/banner8.jpg",
         "bio": "Graphic designer and creative thinker. Turning ideas into visual art.",
         "joined_date": "2022-03-14",
@@ -220,35 +220,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://example.com/image6.jpg"
-        }
-      ]
-    },
-    {
-      "id": "9",
-      "user": {
-        "id": "user9",
-        "name": "Chris Taylor",
-        "username": "chris_taylor",
-        "profile_image_url": "https://example.com/profile9.jpg",
-        "banner_image_url": "https://example.com/banner9.jpg",
-        "bio": "Photographer and nature lover. Capturing moments one snap at a time.",
-        "joined_date": "2020-11-21",
-        "location": "Portland, OR",
-        "followers_count": 670,
-        "following_count": 230
-      },
-      "content": "Had an amazing photography session today at the beach! 📷 #NaturePhotography",
-      "timestamp": "2024-09-07T19:00:00Z",
-      "likes": 250,
-      "retweets": 95,
-      "replies": 35,
-      "mentions": [],
-      "hashtags": ["NaturePhotography"],
-      "media": [
-        {
-          "type": "image",
-          "url": "https://example.com/image7.jpg"
+          "url": "https://pbs.twimg.com/media/GXShxcvWoAUpWDn?format=jpg&name=large"
         }
       ]
     }
