@@ -41,7 +41,7 @@ const DrawerLayout = () => {
           ),
           headerRight: () => (
             <View className="flex-row items-center gap-1">
-              <Text className="text-lg font-medium">Upgrade</Text>
+              <Text className="text-[16px] font-medium">Upgrade</Text>
               <Entypo name="dots-three-vertical" size={18} />
             </View>
           ),

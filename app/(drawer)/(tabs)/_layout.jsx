@@ -23,7 +23,7 @@ const TabLayout = memo(() => {
           tabBarLabel: () => null,
           tabBarActiveTintColor: "black",
           tabBarIcon: ({ color }) => (
-            <Foundation name="home" size={28} color="black" />
+            <Foundation name="home" size={28} color={color} />
           ),
         }}
       />
