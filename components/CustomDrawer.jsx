@@ -39,9 +39,11 @@ const CustomDrawer = (props) => {
             onPress={() => router.push("(drawer)/Profile")}
             className="ml-4"
           >
-            <Text className="text-white text-lg font-bold">Expo_coder</Text>
+            <Text className="text-white text-lg font-bold">its_shri_11</Text>
           </TouchableOpacity>
-          <Text className="font-bold ml-4 text-white text-md">Expo coder</Text>
+          <Text className="font-semibold ml-4 text-white text-md">
+            Shrikant Gaikwad
+          </Text>
           <View className="flex flex-row gap-4 mx-4  ">
             <Text className="text-white">Followers</Text>
             <Text className="text-white">Following</Text>
@@ -77,7 +79,7 @@ const CustomDrawer = (props) => {
           </TouchableOpacity>
           {toggle ? (
             <Reanimated.View
-              entering={FadeInDown.duration(600)}
+              entering={FadeInDown.duration(400)}
               exiting={FadeOutDown.duration(600)}
               className="mx-8 gap-2"
             >
