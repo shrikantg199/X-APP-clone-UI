@@ -17,6 +17,8 @@ export default function Index() {
           width: 100,
           marginLeft: 50,
         },
+        tabBarInactiveTintColor: "gray",
+        tabBarActiveTintColor: "black",
       }}
     >
       <Tab.Screen
@@ -25,8 +27,8 @@ export default function Index() {
           title: "For You",
           tabBarLabelStyle: {
             textTransform: "capitalize",
-            fontSize: 20,
-            fontWeight: 500,
+            fontSize: 16,
+            fontWeight: 400,
           },
         }}
         component={ForYouPage}
@@ -38,8 +40,8 @@ export default function Index() {
           title: "Following",
           tabBarLabelStyle: {
             textTransform: "capitalize",
-            fontSize: 20,
-            fontWeight: 500,
+            fontSize: 16,
+            fontWeight: 400,
           },
         }}
       />

@@ -3,8 +3,8 @@ import React from "react";
 
 const FollowingPage = () => {
   return (
-    <View>
-      <Text>hello</Text>
+    <View className="flex-1 justify-center items-center bg-white">
+      <Text className="text-gray-300 text-5xl">Following</Text>
     </View>
   );
 };
