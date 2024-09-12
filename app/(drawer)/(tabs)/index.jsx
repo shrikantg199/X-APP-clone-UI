@@ -26,7 +26,7 @@ export default function Index() {
           tabBarLabelStyle: {
             textTransform: "capitalize",
             fontSize: 20,
-            fontWeight: 600,
+            fontWeight: 500,
           },
         }}
         component={ForYouPage}
@@ -39,7 +39,7 @@ export default function Index() {
           tabBarLabelStyle: {
             textTransform: "capitalize",
             fontSize: 20,
-            fontWeight: 600,
+            fontWeight: 500,
           },
         }}
       />

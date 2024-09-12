@@ -7,23 +7,25 @@ import CustomDrawer from "../../components/CustomDrawer";
 import {
   AntDesign,
   Entypo,
+  Feather,
   FontAwesome,
   FontAwesome5,
   FontAwesome6,
+  Ionicons,
   MaterialCommunityIcons,
   Octicons,
 } from "@expo/vector-icons";
 const DrawerLayout = () => {
   const navigation = useNavigation();
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView className="flex-1">
       <Drawer
         drawerContent={(props) => <CustomDrawer {...props} />}
         screenOptions={{
           headerTitle: () => (
             <Image
               source={require("../../assets/Xlogo.png")}
-              style={{ height: 30, width: 30 }}
+              className="h-8 w-8"
             />
           ),
           headerTitleAlign: "center",
@@ -33,23 +35,18 @@ const DrawerLayout = () => {
             >
               <Image
                 source={require("../../assets/profile.png")}
-                style={{ width: 30, height: 30, marginLeft: 10 }}
+                className="h-8 w-8 ml-3"
               />
             </TouchableOpacity>
           ),
           headerRight: () => (
-            <View
-              style={{
-                flexDirection: "row",
-                alignItems: "center",
-                flex: 1,
-                gap: 4,
-              }}
-            >
-              <Text style={{ fontWeight: "bold" }}>Upgrade</Text>
-              <Entypo name="dots-three-vertical" size={18}  />
+            <View className="flex-row items-center gap-1">
+              <Text className="text-lg font-medium">Upgrade</Text>
+              <Entypo name="dots-three-vertical" size={18} />
             </View>
           ),
+          drawerActiveTintColor: "black",
+          drawerInactiveTintColor: "black",
         }}
       >
         <Drawer.Screen
@@ -64,7 +61,7 @@ const DrawerLayout = () => {
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
               <TouchableOpacity>
-                <AntDesign name="home" size={24} color={color} />
+                <Feather name="home" size={24} color={color} />
               </TouchableOpacity>
             ),
           }}
@@ -83,7 +80,7 @@ const DrawerLayout = () => {
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
               <MaterialCommunityIcons
-                name="account-star"
+                name="account-star-outline"
                 size={24}
                 color={color}
               />
@@ -120,7 +117,7 @@ const DrawerLayout = () => {
             },
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
-              <FontAwesome name="bookmark" size={24} color={color} />
+              <Feather name="bookmark" size={24} color={color} />
             ),
           }}
         />
@@ -154,7 +151,7 @@ const DrawerLayout = () => {
             },
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
-              <FontAwesome5 name="microphone-alt" size={24} color={color} />
+              <Ionicons name="mic-outline" size={24} color={color} />
             ),
           }}
         />
@@ -171,7 +168,7 @@ const DrawerLayout = () => {
             },
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
-              <FontAwesome6 name="money-bill-wave" size={24} color={color} />
+              <FontAwesome name="money" size={24} color={color} />
             ),
           }}
         />

@@ -4,7 +4,7 @@ import React from "react";
 const ForYouPage = () => {
   return (
     <View>
-      <Text>ForYouPage</Text>
+      <Text className="text-blue-400">ForYouPage</Text>
     </View>
   );
 };

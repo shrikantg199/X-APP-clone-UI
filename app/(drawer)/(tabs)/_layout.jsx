@@ -3,8 +3,10 @@ import React, { memo } from "react";
 import { Tabs, withLayoutContext } from "expo-router";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import {
+  Feather,
   FontAwesome,
   FontAwesome5,
+  Foundation,
   MaterialCommunityIcons,
   MaterialIcons,
 } from "@expo/vector-icons";
@@ -13,7 +15,7 @@ const TabLayout = memo(() => {
   const { Navigator } = createMaterialTopTabNavigator();
   const MaterialTopTabs = withLayoutContext(Navigator);
   return (
-    <Tabs>
+    <Tabs screenOptions={{}}>
       <Tabs.Screen
         name="index"
         options={{
@@ -21,7 +23,7 @@ const TabLayout = memo(() => {
           tabBarLabel: () => null,
           tabBarActiveTintColor: "black",
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="home" size={28} color={color} />
+            <Foundation name="home" size={28} color="black" />
           ),
         }}
       />
@@ -45,7 +47,7 @@ const TabLayout = memo(() => {
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="slash-forward-box"
-              size={24}
+              size={28}
               color={color}
             />
           ),
@@ -58,7 +60,11 @@ const TabLayout = memo(() => {
           tabBarLabel: () => null,
           tabBarActiveTintColor: "black",
           tabBarIcon: ({ color }) => (
-            <MaterialIcons name="groups-2" size={30} color={color} />
+            <MaterialCommunityIcons
+              name="account-group-outline"
+              size={28}
+              color={color}
+            />
           ),
         }}
       />
@@ -69,7 +75,7 @@ const TabLayout = memo(() => {
           tabBarActiveTintColor: "black",
           tabBarLabel: () => null,
           tabBarIcon: ({ color }) => (
-            <MaterialIcons name="notifications" size={24} color={color} />
+            <MaterialIcons name="notifications-none" size={28} color={color} />
           ),
         }}
       />
@@ -80,7 +86,11 @@ const TabLayout = memo(() => {
           tabBarLabel: () => null,
           tabBarActiveTintColor: "black",
           tabBarIcon: ({ color }) => (
-            <MaterialIcons name="message" size={24} color={color} />
+            <MaterialCommunityIcons
+              name="message-processing-outline"
+              size={28}
+              color={color}
+            />
           ),
         }}
       />
