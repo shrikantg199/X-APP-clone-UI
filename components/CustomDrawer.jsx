@@ -25,35 +25,39 @@ const CustomDrawer = (props) => {
   return (
     <View className="flex-1 ">
       <DrawerContentScrollView {...props}>
-        <ImageBackground
-          source={require("../assets/background.jpg")}
-          className="h-[150px]"
+        <TouchableOpacity onPress={() => router.push("(drawer)/Profile")}>
+          <Image
+            source={require("../assets/profile.png")}
+            className="w-14 h-14 ml-2 mt-2"
+          />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => router.push("(drawer)/Profile")}
+          className="ml-4"
         >
-          <TouchableOpacity onPress={() => router.push("(drawer)/Profile")}>
-            <Image
-              source={require("../assets/profile.png")}
-              className="w-16 h-16 ml-2 mt-2"
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => router.push("(drawer)/Profile")}
-            className="ml-4"
-          >
-            <Text className="text-white text-lg font-bold">its_shri_11</Text>
-          </TouchableOpacity>
-          <Text className="font-semibold ml-4 text-white text-md">
+          <Text className="text-black text-lg font-medium">
             Shrikant Gaikwad
           </Text>
-          <View className="flex flex-row gap-4 mx-4  ">
-            <Text className="text-white">Followers</Text>
-            <Text className="text-white">Following</Text>
-          </View>
-        </ImageBackground>
-        <View className="'pt-1 px-5 flex-1 bg-white justify-center'">
+        </TouchableOpacity>
+        <Text className=" ml-4 text-gray-500 text-md"> @its_shri_11</Text>
+        <View className="flex flex-row gap-4 mx-4  ">
+          <Text className="text-black">Followers</Text>
+          <Text className="text-black">Following</Text>
+        </View>
+
+        <View className=" px-5 flex-1 bg-white justify-center">
+          <View
+            style={{
+              height: 0.8,
+              width: "100%",
+              marginTop: 14,
+              backgroundColor: "gray",
+            }}
+          />
           <DrawerItemList {...props} />
           <View
             style={{
-              height: 1,
+              height: 0.8,
               width: "100%",
               backgroundColor: "gray",
             }}

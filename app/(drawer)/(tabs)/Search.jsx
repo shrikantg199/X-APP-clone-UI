@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import News from "../../../components/Explore/News";
 import Trending from "../../../components/Explore/Trending";
@@ -18,6 +18,7 @@ const Explore = memo(() => {
         tabBarItemStyle: {
           width: 100,
         },
+        headerTitleAlign: "center",
       })}
     >
       <Tab.Screen

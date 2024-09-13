@@ -1,0 +1,142 @@
+{
+  "for_you": {
+    "trending_hashtags": [
+      {
+        "hashtag": "#ForYouTag1",
+        "tweet_count": 15000,
+        "category": "Lifestyle",
+        "description": "Description for ForYouTag1."
+      },
+      {
+        "hashtag": "#ForYouTag2",
+        "tweet_count": 12000,
+        "category": "Tech",
+        "description": "Description for ForYouTag2."
+      },
+      {
+        "hashtag": "#ForYouTag3",
+        "tweet_count": 10000,
+        "category": "Travel",
+        "description": "Description for ForYouTag3."
+      },
+      {
+        "hashtag": "#ForYouTag4",
+        "tweet_count": 9500,
+        "category": "Health",
+        "description": "Description for ForYouTag4."
+      }
+    ]
+  },
+  "trending": {
+    "trending_hashtags": [
+      {
+        "hashtag": "#TrendingTag1",
+        "tweet_count": 30000,
+        "category": "News",
+        "description": "Description for TrendingTag1."
+      },
+      {
+        "hashtag": "#TrendingTag2",
+        "tweet_count": 25000,
+        "category": "Entertainment",
+        "description": "Description for TrendingTag2."
+      },
+      {
+        "hashtag": "#TrendingTag3",
+        "tweet_count": 22000,
+        "category": "Politics",
+        "description": "Description for TrendingTag3."
+      },
+      {
+        "hashtag": "#TrendingTag4",
+        "tweet_count": 20000,
+        "category": "Technology",
+        "description": "Description for TrendingTag4."
+      }
+    ]
+  },
+  "sports": {
+    "trending_hashtags": [
+      {
+        "hashtag": "#SportsTag1",
+        "tweet_count": 18000,
+        "category": "Football",
+        "description": "Description for SportsTag1."
+      },
+      {
+        "hashtag": "#SportsTag2",
+        "tweet_count": 16000,
+        "category": "Basketball",
+        "description": "Description for SportsTag2."
+      },
+      {
+        "hashtag": "#SportsTag3",
+        "tweet_count": 14000,
+        "category": "Tennis",
+        "description": "Description for SportsTag3."
+      },
+      {
+        "hashtag": "#SportsTag4",
+        "tweet_count": 12000,
+        "category": "Cricket",
+        "description": "Description for SportsTag4."
+      }
+    ]
+  },
+  "entertainment": {
+    "trending_hashtags": [
+      {
+        "hashtag": "#EntertainmentTag1",
+        "tweet_count": 22000,
+        "category": "Movies",
+        "description": "Description for EntertainmentTag1."
+      },
+      {
+        "hashtag": "#EntertainmentTag2",
+        "tweet_count": 20000,
+        "category": "Music",
+        "description": "Description for EntertainmentTag2."
+      },
+      {
+        "hashtag": "#EntertainmentTag3",
+        "tweet_count": 18000,
+        "category": "TV Shows",
+        "description": "Description for EntertainmentTag3."
+      },
+      {
+        "hashtag": "#EntertainmentTag4",
+        "tweet_count": 16000,
+        "category": "Celebrity",
+        "description": "Description for EntertainmentTag4."
+      }
+    ]
+  },
+  "news": {
+    "trending_hashtags": [
+      {
+        "hashtag": "#BreakingNews1",
+        "tweet_count": 45000,
+        "category": "World",
+        "description": "Breaking news about world events."
+      },
+      {
+        "hashtag": "#LocalNews2",
+        "tweet_count": 30000,
+        "category": "Local",
+        "description": "Updates on local developments."
+      },
+      {
+        "hashtag": "#TechNews3",
+        "tweet_count": 27000,
+        "category": "Technology",
+        "description": "The latest advancements in tech."
+      },
+      {
+        "hashtag": "#PoliticalNews4",
+        "tweet_count": 35000,
+        "category": "Politics",
+        "description": "Political news around the globe."
+      }
+    ]
+  }
+}

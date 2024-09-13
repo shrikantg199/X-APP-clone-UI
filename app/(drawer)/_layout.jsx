@@ -17,6 +17,7 @@ import {
 } from "@expo/vector-icons";
 const DrawerLayout = () => {
   const navigation = useNavigation();
+
   return (
     <GestureHandlerRootView className="flex-1">
       <Drawer
@@ -58,6 +59,7 @@ const DrawerLayout = () => {
               alignItems: "center",
               fontSize: 18,
             },
+
             drawerItemStyle: { backgroundColor: "transparent" },
             drawerIcon: ({ color }) => (
               <TouchableOpacity>

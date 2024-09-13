@@ -1,12 +1,28 @@
-import { FlatList, Image, StyleSheet, Text, View } from "react-native";
-import React from "react";
+import {
+  FlatList,
+  Image,
+  Modal,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import React, { useEffect, useState } from "react";
 import data from "../../data.json";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Drawer } from "expo-router/drawer";
+import { useNavigation, useRouter } from "expo-router";
 const ForYouPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [modalVisible, setModalVisible] = useState(false);
   const dataItems = data?.tweets;
+  const openImageModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+    setModalVisible(true);
+  };
   const formatTimeAgo = (timestamp) => {
     const now = new Date();
     const pastDate = new Date(timestamp);
@@ -19,6 +35,11 @@ const ForYouPage = () => {
       return `${Math.floor(diffInSeconds / 3600)} hours ago`;
     return `${Math.floor(diffInSeconds / 86400)} days ago`;
   };
+  const closeModal = () => {
+    setModalVisible(false);
+    setSelectedImage(null);
+  };
+  const router = useRouter();
   return (
     <View className="bg-white  w-screen p-1">
       <FlatList
@@ -28,10 +49,14 @@ const ForYouPage = () => {
         renderItem={({ item }) => (
           <View className="flex flex-row  border-b border-gray-200 mt-2 ">
             {/* Profile Image */}
-            <Image
-              source={{ uri: item.user.profile_image_url }}
-              className="h-10 w-10 rounded-full mr-2"
-            />
+            <TouchableOpacity
+              onPress={() => router.push(`profile/${item.user.username}`)}
+            >
+              <Image
+                source={{ uri: item.user.profile_image_url }}
+                className="h-10 w-10 rounded-full mr-2"
+              />
+            </TouchableOpacity>
             {/* User Info and Post */}
             <View className="flex-1 ">
               <View className="justify-between flex-row w-full flex items-center">
@@ -53,10 +78,14 @@ const ForYouPage = () => {
               </Text>
 
               {item.media[0].type === "image" ? (
-                <Image
-                  source={{ uri: item.media[0].url }}
-                  className="h-[350px] w-full rounded-3xl object-cover  mt-2"
-                />
+                <TouchableOpacity
+                  onPress={() => openImageModal(item.media[0].url)}
+                >
+                  <Image
+                    source={{ uri: item.media[0].url }}
+                    className="h-[350px] w-full rounded-3xl object-cover mt-2"
+                  />
+                </TouchableOpacity>
               ) : null}
               {/* reactions */}
               <View className="flex-row justify-between w-full my-3 px-2  mt-2">
@@ -79,6 +108,25 @@ const ForYouPage = () => {
                 <AntDesign name="sharealt" size={18} color="gray" />
               </View>
             </View>
+            {/* Modal for Image Preview */}
+            <Modal
+              visible={modalVisible}
+              transparent={true}
+              animationType="fade"
+            >
+              <View className="flex-1 bg-black/20 bg-opacity-90 justify-center items-center px-2">
+                <TouchableOpacity
+                  onPress={closeModal}
+                  className="absolute top-10 right-5 z-10"
+                >
+                  <AntDesign name="close" size={30} color="white" />
+                </TouchableOpacity>
+                <Image
+                  source={{ uri: selectedImage }}
+                  className="w-[100%]  h-[40%] object-cover"
+                />
+              </View>
+            </Modal>
           </View>
         )}
       />
