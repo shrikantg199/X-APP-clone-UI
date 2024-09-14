@@ -7,7 +7,7 @@ import FollowingPage from "./../../../components/Home/FollowingPage";
 const Tab = createMaterialTopTabNavigator();
 export default function Index() {
   const { tweets } = data;
-  console.log(tweets[0].user.username);
+  // console.log(tweets[0].user.username);
   return (
     <Tab.Navigator
       screenOptions={{

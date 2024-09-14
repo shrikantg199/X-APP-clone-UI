@@ -1,16 +1,17 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import data from "../../data.json";
 import { Entypo, Fontisto, Ionicons } from "@expo/vector-icons";
+import ProfileTabs from "../../components/ProfileTabs";
 
 const Profile = () => {
   const { name } = useLocalSearchParams();
-
+  const router = useRouter();
   const dataItems = data?.tweets;
   const filteredData = dataItems?.filter((item) => item.user.username === name);
   return (
-    <View className="bg-white h-screen">
+    <View className="bg-white h-full">
       {filteredData.map((item, index) => (
         <View key={index}>
           <Image
@@ -43,7 +44,7 @@ const Profile = () => {
               </Text>
             </View>
 
-            <View className="flex-row mt-10 items-center space-x-1">
+            <View className="flex-row mt-4 items-center space-x-1">
               <Text className="font-bold text-[18px]  ">
                 {item.user.following_count}
               </Text>
@@ -57,12 +58,15 @@ const Profile = () => {
         </View>
       ))}
       <View className="absolute flex-row justify-between w-full my-10 px-4 items-center">
-        <Ionicons name="arrow-back-circle-sharp" size={40} color="black" />
+        <TouchableOpacity onPress={() => router.back()}>
+          <Ionicons name="arrow-back-circle-sharp" size={40} color="black" />
+        </TouchableOpacity>
         <View className="flex-row gap-2">
           <Fontisto name="search" size={20} color="black" />
           <Entypo name="dots-three-vertical" size={20} color="black" />
         </View>
       </View>
+      <ProfileTabs name={name} />
     </View>
   );
 };
