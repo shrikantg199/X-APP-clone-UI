@@ -35,7 +35,7 @@
         "name": "Jane Smith",
         "username": "jane_smith",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1833396791402000384/vdX94BMX_400x400.jpg",
-        "banner_image_url": "https://example.com/banner2.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/1784539399864401921/1719469905/1500x500",
         "bio": "Movie buff and aspiring filmmaker. Sharing my journey in the world of cinema.",
         "joined_date": "2021-08-22",
         "location": "Los Angeles, CA",
@@ -63,7 +63,7 @@
         "name": "Alice Johnson",
         "username": "alice_johnson",
         "profile_image_url": "https://pbs.twimg.com/profile_images/965724950056218624/BSWiM_0a_400x400.jpg",
-        "banner_image_url": "https://example.com/banner3.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/176379217/1725555821/1500x500",
         "bio": "Travel enthusiast and food lover. Capturing moments from around the globe.",
         "joined_date": "2023-01-30",
         "location": "New York, NY",
@@ -91,7 +91,7 @@
         "name": "Michael Lee",
         "username": "michael_lee",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1361943353193943040/QNaebEsk_400x400.png",
-        "banner_image_url": "https://example.com/banner4.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/21272440/1694010417/1500x500",
         "bio": "Tech enthusiast and startup founder. Passionate about innovation.",
         "joined_date": "2020-12-05",
         "location": "Seattle, WA",
@@ -119,7 +119,7 @@
         "name": "Emily Davis",
         "username": "emily_davis",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1776530035194945536/7qkAWFEf_400x400.jpg",
-        "banner_image_url": "https://example.com/banner5.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/1515353759836405763/1692983745/1500x500",
         "bio": "Fitness trainer and health coach. Helping you achieve your goals.",
         "joined_date": "2019-03-20",
         "location": "Austin, TX",
@@ -147,7 +147,7 @@
         "name": "Sophia Green",
         "username": "sophia_green",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1833913250284453888/CKFzn2Ti_400x400.jpg",
-        "banner_image_url": "https://example.com/banner6.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/1573216104100417536/1681210125/1500x500",
         "bio": "Food critic and culinary expert. Exploring the best dining spots.",
         "joined_date": "2022-07-18",
         "location": "Chicago, IL",
@@ -164,7 +164,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://pbs.twimg.com/media/GXSbdrfXsAAvuIJ?format=jpg&name=medium"
+          "url": "https://pbs.twimg.com/profile_banners/1264788474/1691131542/1500x500"
         }
       ]
     },
@@ -175,7 +175,7 @@
         "name": "Daniel Kim",
         "username": "daniel_kim",
         "profile_image_url": "https://pbs.twimg.com/profile_images/1773315420378058752/Ix3N3l0-_400x400.jpg",
-        "banner_image_url": "https://example.com/banner7.jpg",
+        "banner_image_url": "https://pbs.twimg.com/profile_banners/1523078664124088320/1718896599/1500x500",
         "bio": "Entrepreneur and motivational speaker. Inspiring others to achieve greatness.",
         "joined_date": "2021-09-10",
         "location": "Denver, CO",

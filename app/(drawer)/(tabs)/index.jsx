@@ -1,13 +1,11 @@
-import { Text, View } from "react-native";
-import data from "../../../data.json";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import ForYouPage from "./../../../components/Home/ForYouPage";
 import FollowingPage from "./../../../components/Home/FollowingPage";
+import { useRoute } from "@react-navigation/native";
+import CreatePost from "@/components/CreatePost";
 
 const Tab = createMaterialTopTabNavigator();
 export default function Index() {
-  const { tweets } = data;
-  // console.log(tweets[0].user.username);
   return (
     <Tab.Navigator
       screenOptions={{
@@ -34,7 +32,7 @@ export default function Index() {
         component={ForYouPage}
       />
       <Tab.Screen
-        name="Settings"
+        name="Following"
         component={FollowingPage}
         options={{
           title: "Following",

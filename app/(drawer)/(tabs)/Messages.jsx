@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { memo } from "react";
+import { AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Messages = memo(() => {
   return (
@@ -14,9 +15,10 @@ const Messages = memo(() => {
         </Text>
       </View>
       <TouchableOpacity className="bg-black border rounded-full border-gray-400 px-10 py-3">
-        <Text className="text-lg text-white text-center ">
-          Write a Message
-        </Text>
+        <Text className="text-lg text-white text-center ">Write a Message</Text>
+      </TouchableOpacity>
+      <TouchableOpacity className="absolute bottom-8 right-4 bg-blue-500 py-4 px-4 rounded-full">
+        <MaterialCommunityIcons name="email-plus" size={18} color="white" />
       </TouchableOpacity>
     </View>
   );

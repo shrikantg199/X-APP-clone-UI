@@ -51,7 +51,7 @@ const Posts = memo(({ route }) => {
                   >
                     <Image
                       source={{ uri: item.media[0].url }}
-                      className="h-[350px] w-full rounded-3xl object-cover mt-2"
+                      className="h-[280px] w-[310px] rounded-3xl object-cover mt-2"
                     />
                   </View>
                 ) : null}

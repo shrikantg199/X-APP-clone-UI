@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   tabBarLabel: {
     textTransform: "capitalize",
-    fontSize: 18,
+    fontSize: 17,
     fontWeight: 500,
   },
 });

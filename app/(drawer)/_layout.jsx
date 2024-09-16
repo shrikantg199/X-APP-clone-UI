@@ -2,14 +2,16 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { memo } from "react";
 import { Drawer } from "expo-router/drawer";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { DrawerActions, useNavigation } from "@react-navigation/native";
+import {
+  DrawerActions,
+  useNavigation,
+  useRoute,
+} from "@react-navigation/native";
 import CustomDrawer from "../../components/CustomDrawer";
 import {
-  AntDesign,
   Entypo,
   Feather,
   FontAwesome,
-  FontAwesome5,
   FontAwesome6,
   Ionicons,
   MaterialCommunityIcons,
@@ -17,37 +19,16 @@ import {
 } from "@expo/vector-icons";
 const DrawerLayout = () => {
   const navigation = useNavigation();
+  const route = useRoute();
 
   return (
     <GestureHandlerRootView className="flex-1">
       <Drawer
         drawerContent={(props) => <CustomDrawer {...props} />}
         screenOptions={{
-          headerTitle: () => (
-            <Image
-              source={require("../../assets/Xlogo.png")}
-              className="h-8 w-8"
-            />
-          ),
-          headerTitleAlign: "center",
-          headerLeft: () => (
-            <TouchableOpacity
-              onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
-            >
-              <Image
-                source={require("../../assets/profile.png")}
-                className="h-8 w-8 ml-3"
-              />
-            </TouchableOpacity>
-          ),
-          headerRight: () => (
-            <View className="flex-row items-center gap-1">
-              <Text className="text-[16px] font-medium">Upgrade</Text>
-              <Entypo name="dots-three-vertical" size={18} />
-            </View>
-          ),
           drawerActiveTintColor: "black",
           drawerInactiveTintColor: "black",
+          headerShown: false,
         }}
       >
         <Drawer.Screen
@@ -70,7 +51,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Profile"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Profile",
             headerShown: false,
@@ -91,7 +71,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Premium"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Premium",
             headerShown: false,
@@ -108,7 +87,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Bookmarks"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Bookmarks",
             headerShown: false,
@@ -125,7 +103,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Lists"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Lists",
             headerShown: false,
@@ -142,7 +119,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Space"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Spaces",
             headerShown: false,
@@ -159,7 +135,6 @@ const DrawerLayout = () => {
         />
         <Drawer.Screen
           name="Monetisation"
-          onPress={() => navigation.navigate("/Profile")}
           options={{
             drawerLabel: "Monetisation",
             headerShown: false,

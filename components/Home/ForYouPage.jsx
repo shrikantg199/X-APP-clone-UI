@@ -1,5 +1,6 @@
 import {
   ActivityIndicator,
+  Animated,
   FlatList,
   Image,
   Modal,
@@ -14,12 +15,13 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { useRouter } from "expo-router";
+import { Tabs, useRouter } from "expo-router";
 
 const ForYouPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   const dataItems = data?.tweets;
+
   const router = useRouter();
 
   const openImageModal = (imageUrl) => {
@@ -48,6 +50,7 @@ const ForYouPage = () => {
 
   return (
     <View className="bg-white w-screen p-1">
+      <Tabs.Screen options={{ headerShown: false }} />
       <FlatList
         data={dataItems}
         showsVerticalScrollIndicator={false}
@@ -70,6 +73,10 @@ const ForYouPage = () => {
                   <Text className="text-black text-[16px] font-bold">
                     {item.user.name}
                   </Text>
+                  <Image
+                    source={require("../../assets/VerifyTick.png")}
+                    className="h-4 w-4"
+                  />
                   <Text className="text-gray-500">@{item.user.username}</Text>
                   <Text className="text-gray-400">
                     - {formatTimeAgo(item.timestamp)}
@@ -90,7 +97,7 @@ const ForYouPage = () => {
                 >
                   <Image
                     source={{ uri: item.media[0].url }}
-                    className="h-[350px] w-full rounded-3xl object-cover mt-2"
+                    className="h-[280px] w-[310px] rounded-3xl object-cover mt-2"
                   />
                 </TouchableOpacity>
               ) : null}

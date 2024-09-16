@@ -32,17 +32,21 @@ const Profile = () => {
           </View>
           {/* Profile */}
           <View className="mx-6">
-            <View className="">
-              <Text className="text-3xl font-semibold">{item.user.name}</Text>
-              <Text className="text-gray-400 text-base">
-                @{item.user.username}
-              </Text>
-              <Text className="my-3">{item.user.bio}</Text>
-              <Text className="">
-                <Text className="text-gray-500">Joined Date :</Text>{" "}
-                {item.user.joined_date}
-              </Text>
+            <View className="flex-row items-center gap-2">
+              <Text className="text-2xl font-semibold">{item.user.name}</Text>
+              <Image
+                source={require("../../assets/VerifyTick.png")}
+                className="h-4 w-4"
+              />
             </View>
+            <Text className="text-gray-400 text-base">
+              @{item.user.username}
+            </Text>
+            <Text className="my-3">{item.user.bio}</Text>
+            <Text className="">
+              <Text className="text-gray-500">Joined Date :</Text>
+              {item.user.joined_date}
+            </Text>
 
             <View className="flex-row mt-4 items-center space-x-1">
               <Text className="font-bold text-[18px]  ">
