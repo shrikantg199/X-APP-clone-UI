@@ -19,6 +19,8 @@ const ProfileTabs = ({ name }) => {
         headerTitleAlign: "center",
         tabBarLabelStyle: {
           textTransform: "capitalize",
+          fontWeight: 700,
+          fontSize:15
         },
       }}
     >

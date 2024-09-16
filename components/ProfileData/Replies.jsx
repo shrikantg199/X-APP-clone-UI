@@ -1,14 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 const Replies = () => {
   return (
-    <View>
-      <Text>Replies</Text>
+    <View className="flex-1 justify-center items-center bg-white">
+      <Text className="text-gray-300 text-5xl">No Replies</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Replies
+export default Replies;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

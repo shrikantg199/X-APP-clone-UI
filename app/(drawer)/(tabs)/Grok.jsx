@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { memo } from "react";
+import Animated, { FadeIn, ZoomIn } from "react-native-reanimated";
 
 const Grok = memo(() => {
   return (
@@ -13,7 +14,12 @@ const Grok = memo(() => {
         </Text>
       </View>
       <TouchableOpacity className="bg-black border rounded-full border-gray-400 px-10 py-3">
-        <Text className="text-lg text-white text-center ">Subscribe Now</Text>
+        <Animated.Text
+          entering={ZoomIn}
+          className="text-lg text-white text-center "
+        >
+          Subscribe Now
+        </Animated.Text>
       </TouchableOpacity>
     </View>
   );

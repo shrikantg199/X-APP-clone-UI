@@ -40,7 +40,7 @@ const CustomDrawer = (props) => {
           </Text>
         </TouchableOpacity>
         <Text className=" ml-4 text-gray-500 text-md"> @its_shri_11</Text>
-        <View className="flex flex-row gap-4 mx-4  ">
+        <View className="flex flex-row gap-4 mx-4 mt-1  ">
           <Text className="text-black">Followers</Text>
           <Text className="text-black">Following</Text>
         </View>

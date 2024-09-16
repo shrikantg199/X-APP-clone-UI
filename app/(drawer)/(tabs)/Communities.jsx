@@ -19,7 +19,7 @@ const Communities = () => {
         tabBarIndicatorStyle: { height: 3, backgroundColor: "#1D9BF0" },
       }}
     >
-      <Tab.Screen name="Home" component={Home && CreatePost} />
+      <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Explore" component={Explore} />
     </Tab.Navigator>
   );

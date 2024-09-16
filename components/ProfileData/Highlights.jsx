@@ -3,8 +3,8 @@ import React from "react";
 
 const Highlights = () => {
   return (
-    <View className="">
-      <Text>Highlights</Text>
+    <View className="flex-1 justify-center items-center bg-white">
+      <Text className="text-gray-300 text-5xl">No Highlights</Text>
     </View>
   );
 };

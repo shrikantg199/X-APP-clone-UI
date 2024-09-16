@@ -23,7 +23,13 @@ import {
   useNavigation,
   useRoute,
 } from "@react-navigation/native";
-
+import Animated, {
+  BounceIn,
+  FadeInDown,
+  FadeInLeft,
+  FadeInRight,
+  FadeInUp,
+} from "react-native-reanimated";
 const TabLayout = memo(() => {
   const { Navigator } = createMaterialTopTabNavigator();
   const MaterialTopTabs = withLayoutContext(Navigator);
@@ -34,10 +40,12 @@ const TabLayout = memo(() => {
         name="index"
         options={{
           headerTitle: () => (
-            <Image
-              source={require("../../../assets/Xlogo.png")}
-              className="h-8 w-8"
-            />
+            <Animated.View entering={FadeInUp.delay(200)}>
+              <Image
+                source={require("../../../assets/Xlogo.png")}
+                className="h-8 w-8"
+              />
+            </Animated.View>
           ),
           headerTitleAlign: "center",
           headerLeft: () => (
@@ -51,10 +59,13 @@ const TabLayout = memo(() => {
             </TouchableOpacity>
           ),
           headerRight: () => (
-            <View className="flex-row items-center gap-1 mx-2">
+            <Animated.View
+              entering={FadeInRight.delay(200)}
+              className="flex-row items-center gap-1 mx-4"
+            >
               <Text className="text-[16px] font-medium">Upgrade</Text>
               <Entypo name="dots-three-vertical" size={20} />
-            </View>
+            </Animated.View>
           ),
           tabBarLabel: () => null,
           tabBarActiveTintColor: "black",

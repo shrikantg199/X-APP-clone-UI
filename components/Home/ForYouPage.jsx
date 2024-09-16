@@ -16,6 +16,7 @@ import Feather from "@expo/vector-icons/Feather";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs, useRouter } from "expo-router";
+import CreatePost from "../CreatePost";
 
 const ForYouPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -147,12 +148,7 @@ const ForYouPage = () => {
         )}
       />
       {/* create post */}
-      <TouchableOpacity
-        activeOpacity={0.8}
-        className="absolute bottom-3 right-2 bg-blue-500 py-[8px] px-[17px] rounded-full"
-      >
-        <Text className="text-white text-3xl">+</Text>
-      </TouchableOpacity>
+      <CreatePost />
     </View>
   );
 };

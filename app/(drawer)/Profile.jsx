@@ -33,7 +33,7 @@ const Home = () => {
             <Text className="text-gray-400 text-base">@shri</Text>
             <Text className="">bio</Text>
             <Text className="">
-              <Text className="text-gray-500">Joined Date :</Text>DEc2020
+              <Text className="text-gray-500">Joined Date : </Text>jan 2024
             </Text>
           </View>
 
