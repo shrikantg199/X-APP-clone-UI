@@ -1,12 +1,8 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React, { memo } from "react";
+import {  StyleSheet, TouchableOpacity } from "react-native";
+import React from "react";
 import { Drawer } from "expo-router/drawer";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import {
-  DrawerActions,
-  useNavigation,
-  useRoute,
-} from "@react-navigation/native";
+
 import CustomDrawer from "../../components/CustomDrawer";
 import {
   Entypo,
@@ -18,9 +14,6 @@ import {
   Octicons,
 } from "@expo/vector-icons";
 const DrawerLayout = () => {
-  const navigation = useNavigation();
-  const route = useRoute();
-
   return (
     <GestureHandlerRootView className="flex-1">
       <Drawer
